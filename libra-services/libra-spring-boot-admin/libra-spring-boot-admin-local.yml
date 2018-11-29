@@ -5,6 +5,7 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     health-check-url-path: /actuator/health
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
