@@ -42,7 +42,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://localhost:8761/eureka
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
 
 feign:
