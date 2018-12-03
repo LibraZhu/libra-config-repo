@@ -6,6 +6,8 @@ libra:
     kafka: false
     trace: false
     level: error,info
+  scanner: 
+    open: true
     
 jwt:
   secret: abcdefg
