@@ -1,7 +1,7 @@
 server:
   port: 8000
 
-roses:
+libra:
   log:
     kafka: false
     trace: false
