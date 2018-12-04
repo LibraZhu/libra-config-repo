@@ -37,7 +37,7 @@ zuul:
   routes:
     libra-system: /libra-system/**
     api-gate:
-      path: /auth/**
+      path: /auth/**,/api/**
       url: forward:/gatewayAction  #以/authAction开头的请求转发到本网关的控制器
   retryable: false              #转发重试关闭
   sensitive-headers:
