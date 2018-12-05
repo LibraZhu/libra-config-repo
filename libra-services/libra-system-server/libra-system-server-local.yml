@@ -8,6 +8,7 @@ libra:
     level: error,info
   scanner: 
     open: true
+    appCode: libra-system
     
 jwt:
   secret: abcdefg
