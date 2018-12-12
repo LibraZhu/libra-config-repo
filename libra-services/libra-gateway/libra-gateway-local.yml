@@ -35,10 +35,9 @@ spring:
 zuul:
   add-host-header: true
   routes:
-    libra-system: /libra-system/**
-    api-gate:
+    libra-system:
       path: /auth/**
-      url: forward:/gatewayAction  #以/authAction开头的请求转发到本网关的控制器
+      serviceId: libra-system-server
   retryable: false              #转发重试关闭
   sensitive-headers:
 
