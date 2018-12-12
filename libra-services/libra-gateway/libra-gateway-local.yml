@@ -36,7 +36,7 @@ zuul:
   add-host-header: true
   routes:
     libra-system:
-      path: /auth/**
+      path: /admin/**
       serviceId: libra-system-server
   retryable: false              #转发重试关闭
   sensitive-headers:
