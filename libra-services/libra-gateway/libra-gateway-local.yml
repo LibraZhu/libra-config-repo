@@ -33,6 +33,7 @@ spring:
       valueSerializer: com.libra.core.logger.serizlizer.FastjsonKafkaSerializer
 
 zuul:
+  ignoredServices: '*'
   add-host-header: true
   routes:
     libra-system:
