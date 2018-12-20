@@ -36,9 +36,10 @@ zuul:
   ignoredServices: '*'
   add-host-header: true
   routes:
-    libra-system:
+    libra-system-server:
       path: /admin/**
-      serviceId: libra-system-server
+    libra-poetry-server:
+      path: /poetry/**
   retryable: false              #转发重试关闭
   sensitive-headers:
 
